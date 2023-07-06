@@ -1,0 +1,159 @@
+.caja{
+    background-color: $bg-color;
+    width: 100%;
+    height: 150px;
+    color: $color-text;
+    .caja-1{
+        border: solid 2px white;
+        border-radius: 10px;
+        padding: 15px;
+    }
+    .caja-2{
+        border: solid 2px white;
+        border-radius: 10px;
+        padding: 15px;
+    } 
+}
+.tarjeta{
+    @include tarjeta(300px,400px,200px);
+    &:hover{
+        width: 310px ;
+        height: 410px;
+        -webkit-box-shadow: 2px 2px 33px 0px #000000; 
+        box-shadow: 2px 2px 33px 0px #000000;
+    }
+}
+.btn{
+    @extend %btn1;
+    &:hover{
+        background-color: rgb(255, 255, 255);
+        color: black;
+        border: 2px solid black;
+    }
+}
+.caja-mail{
+    width: 100%;
+    height: 350px;
+    background-color:$bg-color;
+    margin-top: 200px;
+    color: $color-text;
+    .gif{
+        width: 250px;
+        height: 250px;
+        @media(max-width:550px){
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+.caja-2-mail{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0 50px 0;
+    .form-mail{
+        display: block;
+        width: 100%;
+        border: 1px solid rgba(22,22,22,0.7);
+        appearance: none;
+        color: black;
+        background-color: white;
+        border-radius: 30px;
+        padding: 10px;
+        appearance: none;
+        margin-top: 20px;
+    }
+    button{
+        background-color: white;
+        display: block;
+        color: $bg-color;
+        border-radius: 20px;
+        padding: 5px;
+        width: 150px;
+        margin-top: 10px;
+        margin-left: 40%;
+        @media(max-width:550px){
+            width: 100px;
+            font-size: 15px;
+        }
+    }
+}
+.animaciones{
+    margin-top: 200px;
+}
+.tarjeta-2{
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    -webkit-box-shadow: 2px 2px 33px 0px #000000; 
+    box-shadow: 2px 2px 33px 0px #000000;
+    @media(max-width:550px){
+        width: 200px;
+    }
+    .content{
+        position: absolute;
+        text-align: center;
+        color:rgb(0, 166, 255);
+        z-index: 3;
+        opacity: 0;
+        transform: translateY(-30px);
+        transition: 1s;
+        h2{
+           font-size: 35px;
+           text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0), 0 0 20px #000000, 0 0 30px #000000, 0 0 40px #000000, 0 0 55px #000000, 0 0 75px #000000, 7px 11px 4px #000000;
+        }
+    }
+    img{
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+        z-index: 1;
+        transition: 0.5s;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        width: 540px;
+        height: 590px;
+        background-color: rgb(0, 0, 0);
+        opacity: 0.5;
+        z-index: 2;
+        transform: translate(-350px,-350px) rotateZ(60deg);
+        transition: 0.5s;
+    }
+    &:hover .content{
+        opacity: 100;
+        transform: translateY(0px);
+    }
+    &:hover img{
+        transform: scale(1.5);
+    }
+    &:hover::after{
+        transform: translate(0px,0px) rotateZ(60deg);
+    }
+}
+.sucursal{
+    background-color:$bg-color;
+    width: 100%;
+    height: 200px;
+    color:$color-text;
+    margin-top: -7px;
+}
+.map-ubi{
+    width: 100%;
+    height: 800px;
+}
+.nosotros{
+    display: flex;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px $bg-color;
+    padding: 20px;
+    margin: 40px;
+}

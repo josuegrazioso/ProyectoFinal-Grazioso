@@ -1,0 +1,7 @@
+@mixin tarjeta ($width,$height,$m-top) {
+    border: solid 2px $bg-color;
+    width: $width;
+    height: $height;
+    margin-top: $m-top;
+    transition: 0.5s;
+}
