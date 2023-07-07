@@ -23,6 +23,7 @@
                     <li><a href="./ubicación.html">Ubicación</a></li>
                     <li><a href="./ayuda.html">Ayuda</a></li>
                     <li><a href="./cuenta.html">Crea tu cuenta</a></li>
+                    <li><a href="../carrito.html" id="botonCarrito"></a></li>
                 </ul>
             </nav>
             <div>
@@ -37,63 +38,18 @@
         </div>
         <h1 class="text-center py-5">Hoodies</h1>
         <!--tarjetas de productos destacados-->
-        <div class="d-flex justify-content-around align-items-center flex-wrap container">
-            <div data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="800">
-                <div class="tarjeta text-center">
-                    <img class="img-fluid" src="../multimedia/img/buzo-1.jpg" alt="buzo-verde">
-                    <p>Buzo Verde</p>
-                    <button class="btn">Comprar</button>
-                </div>
+        <div class="container my-5">
+            <div class="row">
+              <div class="col-md-3 text-center">
+                &nbsp;
+              </div>
+              <div class="col-md-3 text-end">
+                <a href="carrito.html" id="botonCarrito"></a>
+              </div>
             </div>
-            <div data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="800">
-                <div class="tarjeta text-center">
-                    <img class="img-fluid" src="../multimedia/img/buzo-amarillo.jpg" alt="buzo-amarillo">
-                    <p>Buzo amarillo</p>
-                    <button class="btn">Comprar</button>
-                </div>
-            </div>
-            <div data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="800">
-                <div class="tarjeta text-center">
-                    <img class="img-fluid" src="../multimedia/img/buzo rojo.jpg" alt="buzo-rojo">
-                    <p>Buzo Rojo</p>
-                    <button class="btn">Comprar</button>
-                </div>
-            </div>
-            <div data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="800">
-                <div class="tarjeta text-center">
-                    <img class="img-fluid" src="../multimedia/img/Buzo-marron.jpg" alt="Buzo-marron">
-                    <p>Buzo Marron</p>
-                    <button class="btn">Comprar</button>
-                </div>
-            </div>
-            <div data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="800">
-                <div class="tarjeta text-center">
-                    <img class="img-fluid" src="../multimedia/img/buzo-rosa.jpg" alt="buzo-rosa">
-                    <p>Buzo Rosa</p>
-                    <button class="btn">Comprar</button>
-                </div>
-            </div>
-            <div data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="800">
-                <div class="tarjeta text-center">
-                    <img class="img-fluid" src="../multimedia/img/buzo-verde-claro.jpg" alt="buzo-verde-claro">
-                    <p>Buzo Verde Claro</p>
-                    <button class="btn">Comprar</button>
-                </div>
-            </div>
-            <div data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="800">
-                <div class="tarjeta text-center">
-                    <img class="img-fluid" src="../multimedia/img/buzo-celeste.jpg" alt="buzo-celeste">
-                    <p>Buzo Celeste</p>
-                    <button class="btn">Comprar</button>
-                </div>
-            </div>
-            <div data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="800">
-                <div class="tarjeta text-center">
-                    <img class="img-fluid" src="../multimedia/img/buzo-violeta.jpg" alt="buzo-Violeta">
-                    <p>Buzo Violeta</p>
-                    <button class="btn">Comprar</button>
-                </div>
-            </div>
+        </div>
+        <div class="container my-5">
+            <div id="contenido" class="row"></div>
         </div>
         <!--tarjetas de productos destacados-->
     </main>
@@ -127,6 +83,9 @@
         </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/funciones.js"></script>
+    <script src="../js/buzos.js"></script>
+    <script src="../js/productos.js"></script>
     <script>
         AOS.init();
     </script>

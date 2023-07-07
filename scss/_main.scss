@@ -26,7 +26,7 @@
 .btn{
     @extend %btn1;
     &:hover{
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(33, 255, 4);
         color: black;
         border: 2px solid black;
     }

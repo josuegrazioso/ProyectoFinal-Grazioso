@@ -20,18 +20,38 @@ function buscarProducto(id) {
     return productos.find(item => item.id === id);
 }
 
+function dentroDelCarrito(id){
+    const carrito = cargarCarritoLS();
+
+    return carrito.some(item => item.id === id)
+}
+
 function agregarProducto(id) {
     const carrito = cargarCarritoLS();
-    const producto = buscarProducto(id);
-    carrito.push(producto);
+    if (dentroDelCarrito(id)) {
+        let pos = carrito.findIndex(item => item.id === id);
+        console.log(pos);
+        carrito[pos].cantidad += 1;
+    } else {
+        const producto = buscarProducto(id);
+        producto.cantidad = 1;
+        carrito.push(producto);
+    }
+
     guardarCarritoLS(carrito);
     renderBotonCarrito();
 }
 
 function eliminarProducto(id) {
     const carrito = cargarCarritoLS();
-    const nuevoCarrito = carrito.filter(item => item.id != id)
-    guardarCarritoLS(nuevoCarrito);
+    let pos = carrito.findIndex(item => item.id === id);
+    if (carrito[pos].cantidad > 1) {
+        carrito[pos].cantidad -= 1;
+    } else {
+        carrito.splice(pos, 1);
+    }
+
+    guardarCarritoLS(carrito);
     renderBotonCarrito();
     renderProductos();
 }
@@ -45,13 +65,13 @@ function vaciarCarrito() {
 function cantidadTotalProductos() {
     const carrito = cargarCarritoLS();
 
-    return carrito.length;
+    return carrito.reduce((acomulador, item) => acomulador += item.cantidad,0);
 }
 
 function sumaTotalProductos() {
     const carrito = cargarCarritoLS();
 
-    return carrito.reduce((acumulador, item) => acumulador += item.precio, 0);
+    return carrito.reduce((acumulador, item) => acumulador += item.cantidad * item.precio, 0);
 }
 
 function verProducto(id) {
@@ -62,10 +82,12 @@ function verProducto(id) {
 function renderBotonCarrito() {
     let botonCarrito = document.getElementById("botonCarrito");
     let contenido = `<button type="button" class="btn bg-light position-relative">
-    <img src="imagenes/cart4.svg" alt="Carrito" width="32">
+    <img src="../imagenes/cart4.svg" alt="Carrito" width="28">
     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
     ${cantidadTotalProductos()}
     </span>
     </button>`;
     botonCarrito.innerHTML = contenido;    
 }
+
+

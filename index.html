@@ -25,38 +25,42 @@
                     <li><a href="./pages/ubicación.html">Ubicación</a></li>
                     <li><a href="./pages/ayuda.html">Ayuda</a></li>
                     <li><a href="./pages/cuenta.html">Crea tu cuenta</a></li>
-                    <li><a href="carrito.html" id="botonCarrito">...</a></li>
+                    <li><a href="carrito.html"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="28" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                                                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                                                </svg></a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
+        
         <div class="caja d-block d-flex justify-content-around align-items-center flex-wrap">
             <div class="caja-1"><h4><i class="fa-regular fa-credit-card px-2" style="color: #ffffff;"></i> 12 cuotas sin interes</h4></div>
             <div class="caja-2"><h4><i class="fa-solid fa-truck px-2" style="color: #ffffff;"></i>Envios gratis</h4></div>
         </div>
-        <h1 class="text-center py-5">Productos Destacados</h1>
         <!--comineza: tarjetas de productos destacados-->
+        <h1 class="text-center py-5">Productos Destacados</h1>
         <div class="d-flex justify-content-around align-items-center flex-wrap">
-            <div data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="800">
+            <div data-aos="fade-up" data-aos-duration="500">
                 <div class="tarjeta text-center">
-                    <img class="img-fluid" src="./multimedia/img/buzo-1.jpg" alt="buzo-verde">
+                    <img id="1" class="img-fluid" src="./multimedia/img/buzo-1.jpg" alt="buzo-verde">
                     <p>Buzo Verde</p>
-                    <a href="./pages/productos.html"><button class="btn">Comprar</button></a>
+                    <a href="./pages/productos.html"><button class="btn">Ver Más</button></a>
                 </div>
             </div>
-            <div data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="800">
+            <div data-aos="fade-up" data-aos-duration="500">
                 <div class="tarjeta text-center">
                     <img class="img-fluid" src="./multimedia/img/buzo-amarillo.jpg" alt="buzo-amarillo">
                     <p>Buzo amarillo</p>
-                    <a href="./pages/productos.html"><button class="btn">Comprar</button></a>
+                    <a href="./pages/productos.html"><button class="btn">Ver Más</button></a>
                 </div>
             </div>
-            <div data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="800">
+            <div data-aos="fade-up" data-aos-duration="500">
                 <div class="tarjeta text-center">
                     <img class="img-fluid" src="./multimedia/img/buzo rojo.jpg" alt="buzo-rojo">
                     <p>Buzo Rojo</p>
-                    <a href="./pages/productos.html"><button class="btn">Comprar</button></a>
+                    <a href="./pages/productos.html"><button class="btn">Ver Más</button></a>
                 </div>
             </div>
         </div>
@@ -136,8 +140,5 @@
         AOS.init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script src="js/funciones.js"></script>
-    <script src="js/productos.js"></script>
-    <script src="js/relojes.js"></script>
 </body>
 </html>

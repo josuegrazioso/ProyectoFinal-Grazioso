@@ -1,12 +1,12 @@
 const productos = [
-    {id:1, nombre:"Smartwatch Reloj Fitband Xiaomi Mi Smart Band 7", imagen:"https://images.fravega.com/f300/62bfa8b54d6dfba55b9f6b18c89c7154.jpg.webp", precio:21.899, marca:"Xiaomi"},
-    {id:2, nombre:"Xiaomi Redmi Watch 2 Lite 1.55, caja black malla black de tpu", imagen:"https://images.fravega.com/f300/6f46d9c95467fb1e65b6d6bae63dfa44.jpg.webp", precio:33.999, marca:"Xiaomi"},
-    {id:3, nombre:"Reloj Inteligente Smartwatch Amazfit Gts 4 Mini Blanco Sumergible Gps", imagen:"https://images.fravega.com/f300/409adcf4dfd2b52b236340beb2a653b1.jpg.webp", precio:48.999, marca:"Amazfit"},
-    {id:4, nombre:"Reloj Inteligente Smartwatch Amazfit Gtr 3 Negro Deportivo Sumergible Gps", imagen:"https://images.fravega.com/f300/a562d04c32b9d12f1d01a763c61790ae.jpg.webp", precio:79.999, marca:"Xiaomi"},
-    {id:5, nombre:"Reloj Inteligente Smartwatch Gtr 3 Pro Marron Pantalla Tactil Bluetooth Gps", imagen:"https://images.fravega.com/f300/3d511bd8b783471ee5dc2a20f3e34a5d.jpg.webp", precio:92.999, marca:"Amazfit"},
-    {id:6, nombre:"Reloj Inteligente Samsung Galaxy Watch 5 40cm Bluetooth Silver", imagen:"https://images.fravega.com/f300/ff852e64b543f3b240ff532db2d2dd25.jpg.webp", precio:106.999, marca:"Samsung"},
-    {id:7, nombre:"Apple Watch Se (44mm) - Starlight Gold", imagen:"https://images.fravega.com/f300/d811adee1fcc3b79d0fe310dede773a6.jpg.webp", precio:117.799, marca:"Apple"},
-    {id:8, nombre:"Apple Watch Nike Series 7 GPS - 41mm Starlight Aluminium Case/Pure Platinum/Black Nike Sport Band", imagen:"https://images.fravega.com/f300/e2fe644491ddf26260bf7948e8f2deea.jpg.webp", precio:331.999, marca:"Apple"}
+    {id:1, nombre:"Buzo Verde", imagen:"https://img.freepik.com/psd-gratis/maqueta-sudadera-capucha-sudadera-ninos-pequenos_126278-177.jpg?w=826&t=st=1688620881~exp=1688621481~hmac=441aa7b57fb01af9618962c3750e0ec47116759e4cc1d83370d4cce5027a3c4c", precio:15.999, marca:"ChakeShop"},
+    {id:2, nombre:"Buzo Amarillo", imagen:"https://img.freepik.com/psd-gratis/maqueta-sudadera-capucha-jerzees_126278-97.jpg?w=826&t=st=1688622830~exp=1688623430~hmac=4d3dcb9812f75230b89d10d8aa5586d25075406f2f741fe0838e2370b04e4afe", precio:15.999 , marca:"ChakeShop"},
+    {id:3, nombre:"Buzo Rojo", imagen:"https://img.freepik.com/psd-gratis/jerzees-sudadera-capucha-maqueta-05_126278-98.jpg?w=826&t=st=1688622941~exp=1688623541~hmac=d60923fa77d90a3a0db6ba1ebf090d9305fb78c69a4e5a1a57d6ca746f004d33", precio:15.999, marca:"ChakeShop"},
+    {id:4, nombre:"Buzo marron", imagen:"https://img.freepik.com/psd-gratis/maqueta-sudadera-capucha-jerzees_126278-99.jpg?w=826&t=st=1688622976~exp=1688623576~hmac=d6be731109e28a582e8233f13f803356bab3545e49faf41db04e5ed0b9ee3ed8", precio:12.399, marca:"ChakeShop"},
+    {id:5, nombre:"Buzo Rosa", imagen:"https://img.freepik.com/psd-gratis/maqueta-sudadera-capucha-sudadera-ninos-pequenos_126278-178.jpg?w=826&t=st=1688622998~exp=1688623598~hmac=863fd6ef6f18527c12e73698a1dd828edc2f79f37e939b458983dd295c6e39c4", precio:12.599, marca:"ChakeShop"},
+    {id:6, nombre:"Buzo Verde Claro", imagen:"https://img.freepik.com/psd-gratis/maqueta-unisex-capucha-cremallera-polar-flexible_126278-192.jpg?w=826&t=st=1688623027~exp=1688623627~hmac=5d5ad792920b43dfb5e22fe5876f2cb6d391538d6452a03234df435cbfb44def", precio:12.399, marca:"ChakeShop"},
+    {id:7, nombre:"Buzo Celeste", imagen:"https://img.freepik.com/psd-gratis/maqueta-sudadera-capucha-jerzees_126278-96.jpg?w=826&t=st=1688623150~exp=1688623750~hmac=171d4550c0686d8580a61b74fdae7e5f134dbaf9d1bb585da6c4c4f6110c8de3", precio:12.599, marca:"ChakeShop"},
+    {id:8, nombre:"Buzo Violeta", imagen:"https://img.freepik.com/psd-gratis/sudadera-capucha-nino-pequeno-maqueta-04_126278-175.jpg?w=826&t=st=1688620625~exp=1688621225~hmac=44b3e0bbb5ce14b42b8e47ceb247e34bf64a2b5696d555521c4d8934bb0e53d2", precio:12.399, marca:"ChakeShop"}
 ];
 
 guardarProductosLS();
