@@ -3,7 +3,7 @@ function renderProductos() {
     let contenido = "";
 
     productos.forEach(producto => {
-        contenido += `<div class="col-md-3 mb-5">
+        contenido += `<div class="col-xxl-3 col-xl-6 col-md-6 mb-5">
         <a href="../ver-producto.html" onclick="verProducto(${producto.id})" class="text-decoration-none">
             <div class="d-flex justify-content-around align-items-center flex-wrap">
                 <div data-aos="fade-up" data-aos-duration="500">

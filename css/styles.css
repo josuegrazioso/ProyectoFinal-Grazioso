@@ -5,7 +5,6 @@
   margin: 0;
 }
 
-/* $bg-color-transparente: rgba(0, 0, 0, 0); */
 .btn {
   width: 50%;
   border: 2px solid black;
@@ -19,7 +18,7 @@
 }
 
 .navegador {
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
   width: 100%;
   height: 80px;
   transition: 0.5s;
@@ -27,6 +26,9 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.navegador:hover {
+  background-color: rgb(0, 0, 0);
 }
 .navegador ul {
   list-style: none;
@@ -48,6 +50,40 @@
 }
 @media (max-width: 550px) {
   .navegador .logo {
+    margin-left: 20px;
+  }
+}
+
+.navegador2 {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 80px;
+  transition: 0.5s;
+  display: block;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navegador2 ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.navegador2 ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 30px;
+  font-size: 20px;
+  transition: 0.2s;
+}
+.navegador2 ul li a:hover {
+  color: rgb(0, 255, 234);
+}
+.navegador2 .logo {
+  color: white;
+}
+@media (max-width: 550px) {
+  .navegador2 .logo {
     margin-left: 20px;
   }
 }
@@ -120,14 +156,6 @@
   width: 100%;
   height: 750px;
   background: url(../multimedia/portada-productos-min.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.portada-contactos {
-  width: 100%;
-  height: 750px;
-  background: url(../multimedia/contactos-min.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -316,73 +344,6 @@
   margin: 40px;
 }
 
-.formulario {
-  width: 700px;
-  height: 400px;
-  background-color: rgb(0, 0, 0);
-  border-radius: 10px;
-  padding: 15px;
-  margin: 300px auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "Registrarse" "Nombre" "Email" "Tel" "boton";
-}
-
-.formulario h2 {
-  grid-area: Registrarse;
-  color: white;
-  padding: 10px;
-}
-
-.formulario label {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  padding: 10px;
-}
-
-.formulario label input, .formulario label textarea {
-  background-color: rgba(255, 255, 255, 0);
-  border: none;
-  border-bottom: 1px solid white;
-  color: white;
-}
-
-.formulario label:nth-child(2) {
-  grid-area: Nombre;
-}
-
-.formulario label:nth-child(3) {
-  grid-area: Email;
-}
-
-.formulario label:nth-child(4) {
-  grid-area: Tel;
-}
-
-.formulario button {
-  grid-area: boton;
-  background-color: white;
-  font-size: 20px;
-  border: none;
-  border-radius: 5px;
-  transition: 0.5s;
-}
-.formulario button:hover {
-  background-color: rgb(0, 131, 26);
-  border-radius: 20px;
-  color: white;
-}
-
-@media (max-width: 703px) {
-  .formulario {
-    width: auto;
-    height: auto;
-    margin: 200px 10px;
-    grid-template-columns: 1fr;
-    grid-template-areas: "Registrarse" "Nombre" "Email" "Tel" "boton";
-  }
-}
 .footer {
   background-color: rgb(0, 0, 0);
   width: 100%;
@@ -412,7 +373,7 @@
 
 .footer div ul li a {
   text-decoration: none;
-  color: #0000ff;
+  color: white;
 }
 
 .footer div ul {

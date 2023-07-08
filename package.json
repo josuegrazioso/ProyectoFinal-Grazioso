@@ -1,11 +1,11 @@
 {
-  "name": "chicho-pf",
+  "name": "proyectofinal-grazioso",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "josué Grazioso",
   "license": "ISC",
-  "description": ""
+  "description": "ProyectoFinal-Grazioso"
 }
